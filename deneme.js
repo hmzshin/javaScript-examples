@@ -1,26 +1,33 @@
 console.log("merhaba dünya");
 
-const age=25;
-const user_name= "Hamza Şahin";
-//for döngüsü
-if (age>=18) {
+let prompt = require("prompt-sync")({
+    sigint: true
+});
+let age = prompt("What is your age: ");
+let user_name = prompt("What's your name:");
+let factorial_number = prompt("please enter the number you want to calculate its factorial:");
 
-    console.log(`Merhaba ${user_name} Sitemize hoş geldin`);    
-}else{
+//if döngüsü
+if (age >= 18) {
+
+    console.log(`Merhaba ${user_name} Sitemize hoş geldin`);
+} else {
 
     console.log(`Merhaba ${user_name} Bu siteye giriş yapmak için yaşınız küçük`);
 }
 
 
-//while döngüsü
 
-const factorial_number=5;
-let factorial=1;
 
-for (let i = 1; i <=factorial_number; i++) {
+let factorial = 1;
+// for döngüsü ile faktöriyel hesaplama
+for (let i = 1; i <= factorial_number; i++) {
 
-    factorial = factorial*i;   
-    console.log(factorial) ;
+    factorial = factorial * i;
 }
 
-console.log(`${factorial_number} sayısının faktorieli ${factorial} dir`);
+console.log(`${factorial_number} sayısının  faktöriyeli = ${factorial}`); // for döngüsünün sonucunu ekrana yazdık
+
+let non = user_name.length; // Girilen adın kapladığı karakter sayısı
+
+console.log(non);// length komutu ile aldığımız değeri ekrana yazdık
