@@ -1,4 +1,33 @@
-// *****çarpım fonksiyonu*********
+
+// 1a
+
+let surucuYası=15;
+if (surucuYası> 18) {
+  console.log(true);
+}else{
+  console.log(false);
+}
+
+//1b
+
+let birinciDeger = 22;
+let ikinciDeger=35;
+
+if (birinciDeger>=ikinciDeger) {
+  birinciDeger=67;  
+}
+
+console.log(birinciDeger)
+
+//1c
+
+let sayı="1999";
+let yeni_sayı = Number(sayı);
+console.log(typeof yeni_sayı);
+
+
+
+//1d
 
 function carpma(num1, num2) {
 
@@ -8,7 +37,7 @@ function carpma(num1, num2) {
 console.log(carpma(7, 4));
 
 
-//*******Köpek yaşı hesaplama********
+//2
 
 function kopeginYasi(yıl) {
   kopek_yası = yıl * 7;
@@ -17,7 +46,7 @@ function kopeginYasi(yıl) {
 console.log(`Köpeğin yaşı = ${kopeginYasi(3)}`);
 
 
-// ***********Oyun ********
+//3
 
 function oyun(oyuncu, bilgisayar) {
 
@@ -79,6 +108,8 @@ function feetDonusturucu(cm) {
 
 console.log(feetDonusturucu(100));
 
+//5
+
 function cocukSarkisi(maymunSayısı) {
 
   for (let i = maymunSayısı; i > 0; i--) {
@@ -88,6 +119,7 @@ function cocukSarkisi(maymunSayısı) {
 }
 cocukSarkisi(5)
 
+//6
 
 function notHesapla(not) {
 
