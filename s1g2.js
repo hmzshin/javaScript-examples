@@ -64,16 +64,16 @@ function oyun(oyuncu, bilgisayar) {
 }
 
 function bilgisayarınSecimi(a) {
-  if (0 <= a && a <= 0.33) {
+  if (a == 1) {
     secim = "Taş";
-  } else if (0.34 <= a && a <= 0.66) {
+  } else if (a == 2) {
     secim = "Makas";
   } else {
     secim = "Kağıt";
   }
   return secim;
 }
-let a = Math.random();
+let a = Math.round(1 + Math.random() * 2);
 let player = "Kağıt";
 console.log(`Oyuncu seçimi ${player}`);
 console.log(`Bilgisayar seçimi :${bilgisayarınSecimi(a)}`);
